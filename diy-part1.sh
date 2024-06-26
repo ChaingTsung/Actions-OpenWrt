@@ -22,3 +22,4 @@ sed -i '$a src-git lteinfo https://github.com/4IceG/luci-app-3ginfo-lite' feeds.
 sed -i '$a src-git atsocat  https://github.com/4IceG/luci-app-at-socat' feeds.conf.default
 sed -i '$a src-git smsjs  https://github.com/4IceG/luci-app-sms-tool-js' feeds.conf.default
 sed -i '$a src-git modemband  https://github.com/4IceG/luci-app-modemband' feeds.conf.default
+sed -i '$a src-git modem https://github.com/Siriling/5G-Modem-Support' feeds.conf.default
