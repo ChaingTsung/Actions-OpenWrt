@@ -31,3 +31,5 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i 's/OpenWrt/Holive/g' package/base-files/files/bin/config_generate
 
 rm -rf feeds/modem/{quectel*,rooter,luci-app-usbmodem,luci-app-spdmodem,luci-app-pcimodem}
+
+ [ -e "target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch" ] && echo true || wget -P target/linux/x86/patches-6.6/ 'https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch'
