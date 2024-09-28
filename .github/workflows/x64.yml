@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder for x64
+name: OpenWrt Builder for x64 with lede
 
 on:
   repository_dispatch:
@@ -30,7 +30,7 @@ env:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: local
     timeout-minutes: 1080
 
     steps:
