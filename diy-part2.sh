@@ -32,12 +32,12 @@ sed -i 's/OpenWrt/Holive/g' package/base-files/files/bin/config_generate
 
 rm -rf feeds/modem/{quectel*,rooter,luci-app-usbmodem,luci-app-spdmodem,luci-app-pcimodem}
 
-#git remote add origin   https://github.com/coolsnowwolf/lede.git
-#git config core.sparsecheckout true
-#echo "package/wwan/app"  >> .git/info/sparse-checkout
-#echo "package/wwan/driver"  >> .git/info/sparse-checkout
-#git pull origin master
 
 
 # Update bcm57810s 2.5g
  [ -e "target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch" ] && echo true || wget -P target/linux/x86/patches-6.6/ 'https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch'
+
+# For Quectel 5G Modules
+ [ -e "package/wwan" ]  ||  git clone https://github.com/ChaingTsung/quectel_QMI.git package/quectel_QMI
+ [ -e "package/wwan" ]  ||  git clone  https://github.com/ChaingTsung/quectel_cm-5G.git package/quectel_cm-5G
+ [ -e "package/wwan" ]  ||  git clone   https://github.com/ChaingTsung/quectel_MHI.git package/quectel_MHI
