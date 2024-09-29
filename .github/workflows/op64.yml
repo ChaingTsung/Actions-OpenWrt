@@ -63,6 +63,9 @@ jobs:
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF op/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd op
+        [ -e "package/wwan" ]  ||  git clone https://github.com/ChaingTsung/quectel_QMI.git package/quectel_QMI
+        [ -e "package/wwan" ]  ||  git clone  https://github.com/ChaingTsung/quectel_cm-5G.git package/quectel_cm-5G
+        [ -e "package/wwan" ]  ||  git clone   https://github.com/ChaingTsung/quectel_MHI.git package/quectel_MHI
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
