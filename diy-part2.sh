@@ -38,6 +38,6 @@ rm -rf feeds/modem/{quectel*,rooter,luci-app-usbmodem,luci-app-spdmodem,luci-app
  [ -e "target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch" ] && echo true || wget -P target/linux/x86/patches-6.6/ 'https://raw.githubusercontent.com/coolsnowwolf/lede/master/target/linux/x86/patches-6.6/993-bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch'
 
 # For Quectel 5G Modules
- [ -e "package/wwan" ]  ||  git clone https://github.com/ChaingTsung/quectel_QMI.git package/quectel_QMI
- [ -e "package/wwan" ]  ||  git clone  https://github.com/ChaingTsung/quectel_cm-5G.git package/quectel_cm-5G
- [ -e "package/wwan" ]  ||  git clone   https://github.com/ChaingTsung/quectel_MHI.git package/quectel_MHI
+# [ -e "package/wwan" ]  ||  git clone https://github.com/ChaingTsung/quectel_QMI.git package/quectel_QMI
+# [ -e "package/wwan" ]  ||  git clone  https://github.com/ChaingTsung/quectel_cm-5G.git package/quectel_cm-5G
+# [ -e "package/wwan" ]  ||  git clone   https://github.com/ChaingTsung/quectel_MHI.git package/quectel_MHI
