@@ -30,7 +30,7 @@ env:
 
 jobs:
   build:
-    runs-on: servica
+    runs-on: self-hosted
     timeout-minutes: 10800
 
     steps:
