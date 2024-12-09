@@ -30,8 +30,8 @@ env:
 
 jobs:
   build:
-    runs-on: local
-    timeout-minutes: 1080
+    runs-on: servica
+    timeout-minutes: 10800
 
     steps:
     - name: Checkout
