@@ -30,7 +30,7 @@ env:
 
 jobs:
   build:
-    runs-on: local
+    runs-on: servica
     timeout-minutes: 1080
 
     steps:
