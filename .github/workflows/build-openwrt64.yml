@@ -15,12 +15,13 @@ name: OpenWrt Builder for x64
 on:
   repository_dispatch:
   workflow_dispatch:
-
+  schedule:
+    - cron: '05 10 * * 4'
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: op64.config
+  CONFIG_FILE: openwrtX64.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
