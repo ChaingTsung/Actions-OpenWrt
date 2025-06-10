@@ -21,8 +21,8 @@ rm -rf feeds/small/luci-app-passwall2
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # Modify default IP
-sed -i '150s/192.168.1.1/10.0.0.1/' package/base-files/files/bin/config_generate
-sed -i '151s/192.168/10.0/' package/base-files/files/bin/config_generate
+#sed -i '150s/192.168.1.1/10.0.0.1/' package/base-files/files/bin/config_generate
+#sed -i '151s/192.168/10.0/' package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
